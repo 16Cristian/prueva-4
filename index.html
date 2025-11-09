@@ -1,21 +1,82 @@
 <!DOCTYPE html> 
-<html lang="es"> 
-<head> 
-     <meta charset="UTF-8"> 
-     <title>Mi primera web</title> 
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Nebula Games — Inicio</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <img src="images/logo.png" alt="Nebula Games logo" class="logo">
+        <span class="brand-name">Nebula Games</span>
+      </a>
+      <nav class="main-nav" aria-label="Navegación principal">
+        <a href="index.html" class="nav-link active">Inicio</a>
+        <a href="games.html" class="nav-link">Juegos</a>
+        <a href="contact.html" class="nav-link">Contacto</a>
+      </nav>
+    </div>
+  </header>
 
-     <style> 
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1>Juegos independientes con alma espacial</h1>
+          <p>En Nebula Games creamos experiencias cortas y memorables — pixel art, música envolvente y narrativa íntima.</p>
+          <p><a class="btn" href="games.html">Ver nuestros juegos</a></p>
+        </div>
+        <div class="hero-media">
+          <!-- Imagen insertada (requisito) -->
+          <img src="images/game1.jpg" alt="Nebula Games - Imagen destacada" class="hero-image">
+        </div>
+      </div>
+    </section>
 
-body { 
-    background-color: lightblue; 
-} 
+    <section class="features container">
+      <article class="feature">
+        <h3>Historias compactas</h3>
+        <p>Diseñamos experiencias de 2–6 horas que te dejan pensando.</p>
+      </article>
+      <article class="feature">
+        <h3>Pixel + música</h3>
+        <p>Pixel art y bandas sonoras originales para ambientes únicos.</p>
+      </article>
+      <article class="feature">
+        <h3>Comunidad</h3>
+        <p>Apoya nuestro trabajo en GitHub y síguenos en redes para betas.</p>
+      </article>
+    </section>
 
-     </style> 
+    <section class="trailer container">
+      <h2>Tráiler destacado</h2>
+      <!-- Vídeo insertado localmente (requisito) -->
+      <video controls width="100%" preload="metadata">
+        <source src="assets/trailer.mp4" type="video/mp4">
+        Tu navegador no soporta vídeo HTML5. Descarga el trailer desde el repo.
+      </video>
+      <p class="muted">Si no tienes `trailer.mp4`, reemplaza este archivo por cualquier .mp4 en la carpeta /assets.</p>
+    </section>
+  </main>
 
-</head> 
-<body> 
-     <h1>¡Hola mundo! 🌍</h1> 
-     <p>Esta es mi primera página creada con GitHub Pages.</p> 
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>Nebula Games</strong><br>
+        Indie studio ficticio • 2025
+      </div>
+      <div class="footer-links">
+        <!-- Enlaces externos (requisito ≥2) -->
+        <a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://store.steampowered.com" target="_blank" rel="noopener noreferrer">Tienda (Steam)</a>
+      </div>
+    </div>
+  </footer>
 
-</body> 
-</html> 
+</body>
+</html>
